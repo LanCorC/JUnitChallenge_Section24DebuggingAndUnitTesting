@@ -24,7 +24,7 @@ public class Utilities {
     //ABCBDEEF -> ABCBDEF - double b, not neighboring, so they are kepy
     public String removePairs(String source) {
         //if length <2, no pairs
-        if (source.length() < 2) {
+        if (source == null || source.length() < 2) {
             return source;
         }
 
