@@ -17,8 +17,14 @@ public class UtilitiesTestParameterized_removePairs {
     public static Stream<Arguments> testInput() {
         return Stream.of(
                 //Input, Expected
-                Arguments.of("AABCDDEFF", "ABCDEF"),
-                Arguments.of("ABCCABDEEF", "ABCABDEF")
+                Arguments.of("ABCDEFF", "ABCDEF"),
+                Arguments.of("AB88EFFG", "AB8EFG"),
+
+                Arguments.of("112233445566", "123456"),
+
+                Arguments.of("ZYZQQB", "ZYZQB"),
+
+                Arguments.of("A", "A")
         );
     }
 

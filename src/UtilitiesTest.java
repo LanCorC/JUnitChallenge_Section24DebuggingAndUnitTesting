@@ -48,6 +48,7 @@ class UtilitiesTest {
     @Test
     void converter() {
         assertEquals(300, utilities.converter(10, 5));
+        assertThrows(ArithmeticException.class, () -> utilities.converter(10, 0));
     }
 
     @Test
